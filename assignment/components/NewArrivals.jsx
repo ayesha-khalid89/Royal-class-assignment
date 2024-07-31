@@ -1,15 +1,13 @@
 import React from "react";
 import styles from "./NewArrivals.module.css";
+import commonStyles from './utils/CommonStyles.module.css'
+import SectionHeading from "./common/SectionHeading";
 
 const NewArrivals = () => {
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <div>
-          <button className={styles.button}></button>
-          <span className={styles.featured}>Featured</span>
-        </div>
-
+    <div className={commonStyles.container}>
+      <SectionHeading type={`Featured`}/>
+      <div className={commonStyles.header}>
         <h2 className={styles.title}>New Arrival</h2>
       </div>
       <div className={styles.grid}>

@@ -1,6 +1,10 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import styles from './Products.module.css';
+import commonStyles from './utils/CommonStyles.module.css'
+import SectionHeading from './common/SectionHeading';
+import ViewAllProductsButton from './common/ViewAllProductsButton';
+import ProductItem from './common/ProductItem';
 
 const ProductsSection = () => {
   const [products, setProducts] = useState([]);
@@ -22,8 +26,9 @@ const ProductsSection = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
+    <div className={commonStyles.container}>
+      <SectionHeading type={`Our Products`}/>
+      <div className={commonStyles.header}>
         <h2>Explore Our Products</h2>
         <div className={styles.pagination}>
             <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>❮</button>
@@ -31,15 +36,11 @@ const ProductsSection = () => {
         </div>
       </div>
       <div className={styles.productList}>
-        {currentProducts.map((product) => (
-          <div key={product.id} className={styles.productItem}>
-            <img src={product.images[0]} alt={product.title} className={styles.productImage} />
-            <p>{product.title}</p>
-            <p className={styles.price}>${product.price}</p>
-          </div>
-        ))}
+        {currentProducts.map((product) => {
+              return <ProductItem key={product.id} product={product} isDiscount={false}/>
+        })}
       </div>
-      <button className={styles.exploreButton}>View All Products</button>
+      <ViewAllProductsButton />
     </div>
   );
 };

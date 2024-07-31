@@ -1,0 +1,97 @@
+.productItem {
+    position: relative;
+    width: 270px;
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .productItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .productImage {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .discountBadge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: #DB4444;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 1;
+  }
+  
+  .actionButtonContainer {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1;
+  }
+  
+  .heartButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .priceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .originalPrice {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .discountedPrice {
+    color: #DB4444;
+    font-weight: bold;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin: 8px 0;
+  }
+  
+  .ratingStar {
+    color:#FFAD33;
+    font-size: 18px;
+  }
+  
+  .addToCartButton {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .productItem:hover .addToCartButton {
+    opacity: 1;
+  }
+  

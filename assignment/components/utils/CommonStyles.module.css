@@ -1,0 +1,51 @@
+.exploreButton {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 16px 48px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .type {
+    font-size: 12px;
+    background-color: white;
+    color: #DB4444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  .button {
+    background-color: #DB4444;
+    margin-right: 3px;
+    height: 20px;
+    width: 10px;
+    border-radius: 4px;
+    border: none;
+  }
+  .section {
+    justify-content: flex-start;
+  }
+  .container {
+    padding: 20px;
+    margin: 66px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 36px;
+    font-weight: 600;
+    
+  }
+
+  .productList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  

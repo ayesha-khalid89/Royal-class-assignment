@@ -1,6 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import styles from './Category.module.css';
+import SectionHeading from './common/SectionHeading';
+import commonStyles from './utils/CommonStyles.module.css'
 
 const CategorySection = () => {
   const [categories, setCategories] = useState([]);
@@ -22,8 +24,9 @@ const CategorySection = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
+    <div className={commonStyles.container}>
+     <SectionHeading type={`Category`}/>
+      <div className={commonStyles.header}>
         <h2>Browse By Category</h2>
         <div className={styles.pagination}>
             <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>❮</button>

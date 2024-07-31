@@ -1,0 +1,72 @@
+  .flashSale {
+    display: flex;
+    align-items: center;
+  }
+  
+  .timer {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .timerComponent {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
+  .timerSubComponent {
+    display: flex;
+    align-items: baseline;
+  }
+  .timerValue {
+    font-weight: 700;
+    font-size: 32px;
+    margin-right: 5px;
+  }
+  
+  .timerLabel {
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  .timerColon {
+    font-size: 32px;
+    color: #f00;
+    margin: 0 5px;
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    border: none;
+    background-color: #ddd;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  .productList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+/* styles.module.css */
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+}
