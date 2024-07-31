@@ -1,9 +1,13 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
 
-import Footer from "@components/Footer.jsx";
 export default function Home() {
   return (
-    <>
-    <Footer />
-    </>
+    <div>
+      <Header />
+      <Navbar />
+      <Footer />
+    </div>
   );
 }
