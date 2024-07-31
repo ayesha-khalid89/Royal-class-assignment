@@ -55,11 +55,14 @@
     gap: 8px;
   }
   
-  .originalPrice {
+  .originalStrikedPrice {
     text-decoration: line-through;
     color: #888;
   }
-  
+  .originalPrice {
+    color: #DB4444;
+  }
+
   .discountedPrice {
     color: #DB4444;
     font-weight: bold;

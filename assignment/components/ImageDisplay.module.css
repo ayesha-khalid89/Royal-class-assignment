@@ -1,5 +1,33 @@
-.image{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .image {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .image {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    flex-direction: column;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .image {
+    flex-direction: column;
+    padding: 5px;
+  }
 }

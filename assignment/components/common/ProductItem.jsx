@@ -25,7 +25,7 @@ const ProductItem = ({product, isDiscount}) => {
                         <span className={styles.originalStrikedPrice}>${product.price}</span>
                     </>
                 }
-                {!isDiscount && <span className={styles.originalStrikedPrice}>${product.price}</span>}
+                {!isDiscount && <span className={styles.originalPrice}>${product.price}</span>}
             </div>
             <div className={styles.rating}>
             {Array(5)
