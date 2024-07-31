@@ -5,8 +5,8 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.section}>
-          <h3>Exclusive</h3>
-          <p>Subscribe</p>
+          <h3 className={styles.exclusive}>Exclusive</h3>
+          <p className={styles.subscribe}>Subscribe</p>
           <p>Get 10% off your first order</p>
           <div className={styles.subscribe}>
             <input type="email" placeholder="Enter your email" />
@@ -37,8 +37,7 @@ const Footer = () => {
         <div className={styles.section}>
           <h3>Download App</h3>
           <div className={styles.qr}>
-            <img src="https://via.placeholder.com/50" alt="Google Play" />
-            <img src="https://via.placeholder.com/50" alt="App Store" />
+            <img src="Frame-720.svg" alt="Google Play" />
           </div>
           <div className={styles.social}>
             <i className="fab fa-facebook-f"></i>

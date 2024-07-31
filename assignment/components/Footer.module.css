@@ -4,6 +4,20 @@
     padding: 20px 0;
     text-align: center;
   }
+
+  .exclusive{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .subscribe{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0px;
+  }
   
   .container {
     display: flex;
@@ -15,6 +29,7 @@
   .section {
     flex: 1;
     margin: 10px;
+    text-align: left;
   }
   
   .section h3 {
@@ -24,37 +39,46 @@
   }
   
   .section p {
+    font-family: "Poppins",Arial;
     font-weight: 400;
     font-size: 16px;
     margin: 5px 0;
+    margin-bottom: 16px;
   }
   
   .subscribe {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 10px;
   }
   
   .subscribe input {
     padding: 10px;
-    border: none;
+    border: solid;
+    border-color: white;
     border-radius: 5px 0 0 5px;
     outline: none;
+    border-width: 1px;
+    background-color: black;
   }
   
   .subscribe button {
     padding: 10px;
-    border: none;
+    border: solid;
     border-radius: 0 5px 5px 0;
-    background-color: #fff;
-    color: #000;
+    background-color: black;
+    color: white;
     cursor: pointer;
+    border-width: 1px;
+    border-collapse: collapse;
   }
   
   .qr img {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
+    width: 198px;
+    height: 84px;
   }
   
   .social i {
