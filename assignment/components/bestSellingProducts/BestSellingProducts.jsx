@@ -1,9 +1,9 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import commonStyles from './utils/CommonStyles.module.css'
-import SectionHeading from './common/SectionHeading';
-import ProductItem from './common/ProductItem';
-import ViewAllProductsButton from './common/ViewAllProductsButton';
+import commonStyles from '../utils/CommonStyles.module.css'
+import SectionHeading from '../common/SectionHeading';
+import ProductItem from '../common/ProductItem';
+import ViewAllProductsButton from '../common/ViewAllProductsButton';
 
 const BestSellingProducts = () => {
     const [products, setProducts] = useState([]);

@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import styles from './Category.module.css';
-import SectionHeading from './common/SectionHeading';
-import commonStyles from './utils/CommonStyles.module.css'
+import SectionHeading from '../common/SectionHeading';
+import commonStyles from '../utils/CommonStyles.module.css';
 
 const CategorySection = () => {
   const [categories, setCategories] = useState([]);

@@ -1,10 +1,10 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import styles from './FlashSales.module.css';
-import ViewAllProductsButton from './common/ViewAllProductsButton';
-import SectionHeading from './common/SectionHeading';
-import commonStyles from './utils/CommonStyles.module.css'
-import ProductItem from './common/ProductItem';
+import ViewAllProductsButton from '../common/ViewAllProductsButton';
+import SectionHeading from '../common/SectionHeading';
+import commonStyles from '../utils/CommonStyles.module.css'
+import ProductItem from '../common/ProductItem';
 const FlashSalesSection = () => {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);

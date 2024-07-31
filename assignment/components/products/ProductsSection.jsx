@@ -1,10 +1,10 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import styles from './Products.module.css';
-import commonStyles from './utils/CommonStyles.module.css'
-import SectionHeading from './common/SectionHeading';
-import ViewAllProductsButton from './common/ViewAllProductsButton';
-import ProductItem from './common/ProductItem';
+import commonStyles from '../utils/CommonStyles.module.css'
+import SectionHeading from '../common/SectionHeading';
+import ViewAllProductsButton from '../common/ViewAllProductsButton';
+import ProductItem from '../common/ProductItem';
 
 const ProductsSection = () => {
   const [products, setProducts] = useState([]);

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NewArrivals.module.css";
-import commonStyles from './utils/CommonStyles.module.css'
-import SectionHeading from "./common/SectionHeading";
+import commonStyles from '../utils/CommonStyles.module.css'
+import SectionHeading from "../common/SectionHeading";
 
 const NewArrivals = () => {
   return (
