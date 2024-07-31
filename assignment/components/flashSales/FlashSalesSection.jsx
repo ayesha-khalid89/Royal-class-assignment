@@ -25,7 +25,7 @@ const FlashSalesSection = () => {
   }, []);
 
   function calculateTimeLeft() {
-    const difference = +new Date('2024-08-01') - +new Date();
+    const difference = +new Date('2024-08-04') - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
