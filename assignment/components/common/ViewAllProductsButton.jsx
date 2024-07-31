@@ -6,7 +6,15 @@ const ViewAllProductsButton = ({shortText}) => {
     text = 'View All'
   }
   return (
-    <button className={styles.exploreButton}>{text}</button>
+    <>
+    {shortText && <button className={styles.exploreButton}>{text}</button>}
+    {!shortText &&(
+      <div className={styles.buttonContainer}>
+        <button className={styles.exploreButton}>{text}</button>
+      </div>
+    )
+    }
+    </>
   )
 }
 

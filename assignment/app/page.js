@@ -7,6 +7,7 @@ import NewArrivals from "@/components/NewArrivals";
 import ProductsSection from "@/components/ProductsSection";
 import FlashSalesSection from "@/components/FlashSalesSection";
 import BestSellingProducts from "@/components/BestSellingProducts";
+import ImageDisplay from "@/components/ImageDisplay";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
       <FlashSalesSection/>
       <CategorySection />
       <BestSellingProducts/>
+      <ImageDisplay />
       <ProductsSection/>
       <NewArrivals />
       <FeaturesSection />
