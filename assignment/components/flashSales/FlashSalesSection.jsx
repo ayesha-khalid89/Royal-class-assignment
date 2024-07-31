@@ -5,6 +5,7 @@ import ViewAllProductsButton from '../common/ViewAllProductsButton';
 import SectionHeading from '../common/SectionHeading';
 import commonStyles from '../utils/CommonStyles.module.css'
 import ProductItem from '../common/ProductItem';
+
 const FlashSalesSection = () => {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -40,11 +41,15 @@ const FlashSalesSection = () => {
     return timeLeft;
   }
 
+  function formatTime(value) {
+    return value < 10 ? `0${value}` : value;
+  }
+
   const timerComponents = Object.keys(timeLeft).map((interval, index) => (
     <div key={interval} className={styles.timerComponent}>
       <span className={styles.timerLabel}>{interval.charAt(0).toUpperCase() + interval.slice(1)}</span>
       <div className={styles.timerSubComponent}>
-        <span className={styles.timerValue}>{timeLeft[interval]}</span>
+        <span className={styles.timerValue}>{formatTime(timeLeft[interval])}</span>
         {index < 3 && <span className={styles.timerColon}>:</span>}
       </div>
     </div>
@@ -60,25 +65,25 @@ const FlashSalesSection = () => {
 
   return (
     <div className={commonStyles.container}>
-        <SectionHeading type={`Today's`}/>
-        <div className={commonStyles.header}>
-            <div className={styles.flashSale}>
-                <h2>Flash Sales</h2>
-                <div className={styles.timer}>
-                {timerComponents.length ? timerComponents : <span>Time's up!</span>}
-                </div>
-            </div>
-            <div className={styles.pagination}>
-            <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>❮</button>
-            <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(products.length / productsPerPage)}>❯</button>
-            </div>
+      <SectionHeading type={`Today's`} />
+      <div className={commonStyles.header}>
+        <div className={styles.flashSale}>
+          <h2>Flash Sales</h2>
+          <div className={styles.timer}>
+            {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+          </div>
         </div>
-        <div className={styles.productList}>
-            {currentProducts.map((product) => {
-              return <ProductItem key={product.id} product={product} isDiscount={true}/>
+        <div className={styles.pagination}>
+          <button onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1}>❮</button>
+          <button onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(products.length / productsPerPage)}>❯</button>
+        </div>
+      </div>
+      <div className={styles.productList}>
+        {currentProducts.map((product) => {
+          return <ProductItem key={product.id} product={product} isDiscount={true} />
         })}
-        </div>
-        <ViewAllProductsButton/>
+      </div>
+      <ViewAllProductsButton />
     </div>
   );
 };
