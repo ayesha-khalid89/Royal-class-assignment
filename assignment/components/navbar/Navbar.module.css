@@ -16,10 +16,13 @@
 }
 
 .navitem {
+  display: flex;
   margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 .navitem .navlink {
+  align-items: left;
   color: gray;
   text-decoration: none;
   font-size: 16px;
@@ -34,6 +37,7 @@
   height: auto;
   max-height: 600px;
   border-radius: 10px;
+  margin-left: 10px
 }
 
 .imageContainer {

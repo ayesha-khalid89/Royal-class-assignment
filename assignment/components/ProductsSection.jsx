@@ -9,7 +9,7 @@ import ProductItem from './common/ProductItem';
 const ProductsSection = () => {
   const [products, setProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 6;
+  const productsPerPage = 8;
 
   useEffect(() => {
     fetch('https://api.escuelajs.co/api/v1/products')
