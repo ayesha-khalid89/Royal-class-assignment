@@ -14,7 +14,7 @@ const FlashSalesSection = () => {
   useEffect(() => {
     fetch('https://api.escuelajs.co/api/v1/products')
       .then((response) => response.json())
-      .then((data) => setProducts(data.slice(0, 12))); // Take first 12 products for flash sales
+      .then((data) => setProducts(data.slice(6, 18))); // Take first 12 products for flash sales
   }, []);
 
   useEffect(() => {
