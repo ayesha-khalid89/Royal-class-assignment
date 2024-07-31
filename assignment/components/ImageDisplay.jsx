@@ -3,7 +3,7 @@ import styles from "./ImageDisplay.module.css";
 
 const ImageDisplay = () => {
   return (
-    <div className={styles.image}>
+    <div className={styles.container}>
         <img src="Frame-600.svg" alt="image"  className={styles.image}/>
     </div>
   )
