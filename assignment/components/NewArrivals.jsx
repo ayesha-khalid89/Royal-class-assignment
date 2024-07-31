@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NewArrivals.module.css";
 
-const NewArrivalSection = () => {
+const NewArrivals = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -25,4 +25,4 @@ const NewArrivalSection = () => {
   );
 };
 
-export default NewArrivalSection;
+export default NewArrivals;
